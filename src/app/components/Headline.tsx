@@ -3,6 +3,11 @@ export function Headline() {
         <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1rem", position: "sticky", top: 0,backgroundColor: "white", zIndex: 1000}}>
             <div style={{ marginRight: "auto" }}>ロゴ</div>
             <nav style={{ display: "flex", gap: "2rem" }}>
+                <a href="#top" style={{ 
+                  textDecoration: "none",
+                  color: "#333",
+                  transition: "color 0.3s"
+                }}>top</a>
                 <a href="#about" style={{ 
                   textDecoration: "none",
                   color: "#333",
