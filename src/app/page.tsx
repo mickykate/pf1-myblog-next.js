@@ -3,18 +3,29 @@ import {Footer} from "./components/Footer"
 
 export default function Home() {
   return (
-    <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+    <div style={{ 
+      width: "100%",
+      minHeight: "100vh",
+      margin: 0,
+      padding: 0
+    }}>
       <Headline />
-      <main>
+      <main style={{
+        width: "100%",
+        margin: 0,
+        padding: 0
+      }}>
         {/*トップページを１ページとして作成する。文言と締めは横並び。*/}
         <section style={{ 
           minHeight: "100vh",
+          width: "100%",
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
           padding: "2rem",
           position: "relative",
-          overflow: "hidden"
+          overflow: "hidden",
+          boxSizing: "border-box"
         }}>
            {/* アニメーション背景 */}
         <div style={{
@@ -23,6 +34,7 @@ export default function Home() {
           left: 0,
           right: 0,
           bottom: 0,
+          width: "100%",
           backgroundImage: `
             linear-gradient(45deg, #e6f3e6 25%, transparent 25%),
             linear-gradient(-45deg, #cce5cc 25%, transparent 25%),
@@ -30,13 +42,14 @@ export default function Home() {
             linear-gradient(-45deg, transparent 75%, #cce5cc 75%)
           `,
           backgroundSize: "60px 60px",
+          backgroundRepeat: "repeat",
           animation: "moveBackground 20s linear infinite",
           opacity: 0.15,
           zIndex: -1
         }} />
         <h1 style={{
           fontFamily: "'Dancing Script', cursive",
-          fontSize: "3rem",
+          fontSize: "clamp(2rem, 5vw, 3rem)",
           textAlign: "center",
           marginBottom: "1rem",
           position: "relative",
@@ -44,7 +57,7 @@ export default function Home() {
         }}>MIYUKI KATO</h1>
         <p style={{
           fontFamily: "'Great Vibes', cursive",
-          fontSize: "1.5rem",
+          fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
           textAlign: "center",
           color: "#666",
           position: "relative",
@@ -54,8 +67,10 @@ export default function Home() {
         {/*各セクションを作成する*/}
         <section id="about" style={{ 
           minHeight: "100vh",
+          width: "100%",
           padding: "2rem",
-          scrollMarginTop: "2rem" // ヘッダーの高さ分の余白
+          scrollMarginTop: "2rem",
+          boxSizing: "border-box"
         }}>
           <h2 style={{
             fontFamily: "'Dancing Script', cursive",
@@ -73,8 +88,10 @@ export default function Home() {
         </section>
         <section id="work" style={{ 
           minHeight: "100vh",
+          width: "100%",
           padding: "2rem",
-          scrollMarginTop: "2rem" // ヘッダーの高さ分の余白
+          scrollMarginTop: "2rem",
+          boxSizing: "border-box"
         }}>
           <h2 style={{
             fontFamily: "'Dancing Script', cursive",
@@ -92,8 +109,10 @@ export default function Home() {
         </section>
         <section id="skills" style={{ 
           minHeight: "100vh",
+          width: "100%",
           padding: "2rem",
-          scrollMarginTop: "2rem" // ヘッダーの高さ分の余白
+          scrollMarginTop: "2rem",
+          boxSizing: "border-box"
         }}>
           <h2 style={{
             fontFamily: "'Dancing Script', cursive",
@@ -111,8 +130,10 @@ export default function Home() {
         </section>
         <section id="contact" style={{ 
           minHeight: "100vh",
+          width: "100%",
           padding: "2rem",
-          scrollMarginTop: "2rem" // ヘッダーの高さ分の余白
+          scrollMarginTop: "2rem",
+          boxSizing: "border-box"
         }}>
           <h2 style={{
             fontFamily: "'Dancing Script', cursive",
