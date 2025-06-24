@@ -1,5 +1,6 @@
 import {Headline} from "./components/Headline"
 import {Footer} from "./components/Footer"
+import {About} from "./about"
 
 export default function Home() {
   return (
@@ -83,7 +84,7 @@ export default function Home() {
             margin: "0 auto",
             lineHeight: "1.6"
           }}>
-            ここに自己紹介文を入れます。
+            <About />
           </p>
         </section>
         <section id="work" style={{ 
