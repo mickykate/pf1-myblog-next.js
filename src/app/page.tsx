@@ -84,8 +84,8 @@ export default function Home() {
             margin: "0 auto",
             lineHeight: "1.6"
           }}>
-            <About />
           </p>
+            <About />
         </section>
         <section id="work" style={{ 
           minHeight: "100vh",
