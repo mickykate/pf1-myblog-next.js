@@ -21,7 +21,7 @@ export function About() {
                     textAlign: "center"
                 }}>
                     <img 
-                        src="/profile-photo.jpg" 
+                        src="/063BFCFA-F32C-4665-A9DF-306A94115D03_1_105_c.jpeg" 
                         alt="Profile Photo"
                         style={{
                             width: "300px",
