@@ -1,6 +1,7 @@
 import {Headline} from "./components/Headline"
 import {Footer} from "./components/Footer"
 import {About} from "./about"
+import {Contact} from "./contact"
 
 export default function Home() {
   return (
@@ -147,7 +148,7 @@ export default function Home() {
             margin: "0 auto",
             lineHeight: "1.6"
           }}>
-            最後にお問合せフォームを追加します。
+            <Contact />
           </p>
         </section>
       </main>
