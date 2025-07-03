@@ -6,7 +6,7 @@ export function Contact() {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log({ name, email, message });
         alert('お問い合わせありがとうございます！');
@@ -27,16 +27,9 @@ export function Contact() {
                 padding: "2rem",
                 borderRadius: "8px",
                 boxShadow: "0 4px 12px rgba(0,0,0,0.1)"
-            }}>
-                <h2 style={{
-                    fontFamily: "'Dancing Script', cursive",
-                    fontSize: "2.5rem",
-                    textAlign: "center",
-                    marginBottom: "2rem"
-                }}>Contact Me</h2>
-                
+            }}> 
                 <div style={{ marginBottom: "1.5rem" }}>
-                    <label style={{ display: "block", marginBottom: "0.5rem" }}>氏名</label>
+                    <label style={{ display: "block", marginBottom: "0.5rem" }}>name</label>
                     <input 
                         type="text" 
                         value={name} 
@@ -47,7 +40,7 @@ export function Contact() {
                 </div>
                 
                 <div style={{ marginBottom: "1.5rem" }}>
-                    <label style={{ display: "block", marginBottom: "0.5rem" }}>メールアドレス</label>
+                    <label style={{ display: "block", marginBottom: "0.5rem" }}>mail-address</label>
                     <input 
                         type="email" 
                         value={email} 
@@ -58,12 +51,12 @@ export function Contact() {
                 </div>
                 
                 <div style={{ marginBottom: "1.5rem" }}>
-                    <label style={{ display: "block", marginBottom: "0.5rem" }}>内容</label>
+                    <label style={{ display: "block", marginBottom: "0.5rem" }}>Content</label>
                     <textarea 
                         value={message} 
                         onChange={(e) => setMessage(e.target.value)} 
                         required
-                        rows="6"
+                        rows={6}
                         style={{ width: "100%", padding: "0.75rem", borderRadius: "4px", border: "1px solid #ccc" }}
                     />
                 </div>
