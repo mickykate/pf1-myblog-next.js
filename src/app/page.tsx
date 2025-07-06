@@ -51,12 +51,12 @@ export default function Home() {
         }} />
         <h1 style={{
           fontFamily: "'Dancing Script', cursive",
-          fontSize: "clamp(2rem, 5vw, 3rem)",
+          fontSize: "4rem",
           textAlign: "center",
           marginBottom: "1rem",
           position: "relative",
           zIndex: 1
-        }}>MIYUKI KATO</h1>
+        }}>MIYUKI<br />KATO</h1>
         <p style={{
           fontFamily: "'Great Vibes', cursive",
           fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
@@ -68,24 +68,11 @@ export default function Home() {
         </section>
         {/*各セクションを作成する*/}
         <section id="about" style={{ 
-          minHeight: "100vh",
+          minHeight: "80vh",
           width: "100%",
-          padding: "2rem",
           scrollMarginTop: "2rem",
           boxSizing: "border-box"
         }}>
-          <h2 style={{
-            fontFamily: "'Dancing Script', cursive",
-            fontSize: "2.5rem",
-            textAlign: "center",
-            marginBottom: "2rem"
-          }}>About Me</h2>
-          <p style={{
-            maxWidth: "800px",
-            margin: "0 auto",
-            lineHeight: "1.6"
-          }}>
-          </p>
             <About />
         </section>
         <section id="work" style={{ 
@@ -143,13 +130,7 @@ export default function Home() {
             textAlign: "center",
             marginBottom: "2rem"
           }}>Contact Me</h2>
-          <p style={{
-            maxWidth: "800px",
-            margin: "0 auto",
-            lineHeight: "1.6"
-          }}>
             <Contact />
-          </p>
         </section>
       </main>
       <Footer />

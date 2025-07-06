@@ -14,7 +14,7 @@ export function Contact() {
 
     return (
         <div style={{
-            minHeight: "100vh",
+            maxHeight: "100vh",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",

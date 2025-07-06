@@ -1,13 +1,20 @@
 export function About() {
     return (
         <div style={{
-            minHeight: "100vh",
+            minHeight: "80vh",
             display: "flex",
+            flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
             padding: "2rem",
             backgroundColor: "#f8f9fa"
         }}>
+            <h2 style={{
+            fontFamily: "'Dancing Script', cursive",
+            fontSize: "2.5rem",
+            textAlign: "center",
+            marginBottom: "2rem"
+            }}>About Me</h2>
             <div style={{
                 display: "flex",
                 maxWidth: "1200px",
