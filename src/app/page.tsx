@@ -50,15 +50,15 @@ export default function Home() {
           zIndex: -1
         }} />
         <h1 style={{
-          fontFamily: "'Dancing Script', cursive",
-          fontSize: "4rem",
+          fontFamily: "Whisper, cursive",
+          fontSize: "9rem",
           textAlign: "center",
           marginBottom: "1rem",
           position: "relative",
           zIndex: 1
         }}>MIYUKI<br />KATO</h1>
         <p style={{
-          fontFamily: "'Great Vibes', cursive",
+          fontFamily: "Alegreya Sans SC, cursive",
           fontSize: "clamp(1.2rem, 3vw, 1.5rem)",
           textAlign: "center",
           color: "#666",

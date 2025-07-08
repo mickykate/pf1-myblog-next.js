@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Dancing_Script, Great_Vibes } from "next/font/google";
+import { Geist, Geist_Mono, Whisper, Alegreya_Sans_SC } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,12 +12,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const dancingScript = Dancing_Script({
-  variable: "--font-dancing-script",
+const whisper = Whisper({
+  variable: "--font-whisper",
   subsets: ["latin"],
+  weight: "400"
 });
 
-const greatVibes = Great_Vibes({
+const alegreyaSansSC = Alegreya_Sans_SC({
   variable: "--font-great-vibes",
   subsets: ["latin"],
   weight: "400"
@@ -31,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${dancingScript.variable} ${greatVibes.variable} antialiased`}
+        className={`${whisper.variable} ${alegreyaSansSC.variable} antialiased`}
       >
         {children}
       </body>
