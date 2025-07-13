@@ -10,7 +10,7 @@ export function About() {
             backgroundColor: "#f8f9fa"
         }}>
             <h2 style={{
-            fontFamily: "'Dancing Script', cursive",
+            fontFamily: "var(--font-alegreya-sans-sc), cursive",
             fontSize: "2.5rem",
             textAlign: "center",
             marginBottom: "2rem"

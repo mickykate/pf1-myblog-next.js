@@ -1,6 +1,7 @@
 import {Headline} from "./components/Headline"
 import {Footer} from "./components/Footer"
 import {About} from "./about"
+import {Skills} from "./skills"
 import {Contact} from "./contact"
 
 export default function Home() {
@@ -83,7 +84,7 @@ export default function Home() {
           boxSizing: "border-box"
         }}>
           <h2 style={{
-            fontFamily: "'Dancing Script', cursive",
+            fontFamily: "var(--font-alegreya-sans-sc), cursive",
             fontSize: "2.5rem",
             textAlign: "center",
             marginBottom: "2rem"
@@ -103,19 +104,7 @@ export default function Home() {
           scrollMarginTop: "2rem",
           boxSizing: "border-box"
         }}>
-          <h2 style={{
-            fontFamily: "'Dancing Script', cursive",
-            fontSize: "2.5rem",
-            textAlign: "center",
-            marginBottom: "2rem"
-          }}>My Skills</h2>
-          <p style={{
-            maxWidth: "800px",
-            margin: "0 auto",
-            lineHeight: "1.6"
-          }}>
-            ここに現在のスキルを表示。
-          </p>
+          <Skills />
         </section>
         <section id="contact" style={{ 
           minHeight: "100vh",
@@ -125,7 +114,7 @@ export default function Home() {
           boxSizing: "border-box"
         }}>
           <h2 style={{
-            fontFamily: "'Dancing Script', cursive",
+            fontFamily: "var(--font-alegreya-sans-sc), cursive",
             fontSize: "2.5rem",
             textAlign: "center",
             marginBottom: "2rem"

@@ -19,7 +19,7 @@ const whisper = Whisper({
 });
 
 const alegreyaSansSC = Alegreya_Sans_SC({
-  variable: "--font-great-vibes",
+  variable: "--font-alegreya-sans-sc",
   subsets: ["latin"],
   weight: "400"
 });
