@@ -1,6 +1,7 @@
 import {Headline} from "./components/Headline"
 import {Footer} from "./components/Footer"
 import {About} from "./about"
+import {Work} from "./work"
 import {Skills} from "./skills"
 import {Contact} from "./contact"
 
@@ -83,19 +84,7 @@ export default function Home() {
           scrollMarginTop: "2rem",
           boxSizing: "border-box"
         }}>
-          <h2 style={{
-            fontFamily: "var(--font-alegreya-sans-sc), cursive",
-            fontSize: "2.5rem",
-            textAlign: "center",
-            marginBottom: "2rem"
-          }}>My Portfolio</h2>
-          <p style={{
-            maxWidth: "800px",
-            margin: "0 auto",
-            lineHeight: "1.6"
-          }}>
-            ここに作品を入れます。
-          </p>
+            <Work/>
         </section>
         <section id="skills" style={{ 
           minHeight: "100vh",

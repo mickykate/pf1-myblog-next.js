@@ -9,4 +9,7 @@ html {
       background-position: 60px 60px;
     }
   }
-  
+  @keyframes marquee {
+    0% { transform: transkateX(0); }
+    100% { transform: translateX(-50%); }
+  }
