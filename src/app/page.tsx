@@ -78,7 +78,7 @@ export default function Home() {
             <About />
         </section>
         <section id="work" style={{ 
-          minHeight: "100vh",
+          minHeight: "80vh",
           width: "100%",
           padding: "2rem",
           scrollMarginTop: "2rem",

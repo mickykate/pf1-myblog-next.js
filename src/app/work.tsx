@@ -12,13 +12,14 @@ export function Work() {
             textAlign: "center",
             marginBottom: "2rem"
         }}>My Portfolio</h2>
-        <p style={{
+            <p style={{
             maxWidth: "800px",
             margin: "0 auto",
-            lineHeight: "1.6"
-        }}>
-            ここに作品を入れます。
-        </p>
+            marginBottom: "2rem",
+            textAlign: "center"
+            }}>
+            今まで取り組んできた作品達です。
+            </p>
             <div style={{
                 display: "flex",
                 gap: "1rem",
@@ -58,7 +59,7 @@ export function Work() {
                     minWidth: "120px",
                     textAlign: "center"
                 }}>Sports Scores</div>
-                <div style={{
+                                <div style={{
                     padding: "0.5rem 1rem",
                     backgroundColor: "#ef4444",
                     color: "#fff",
