@@ -1,12 +1,14 @@
 export function Skills () {
     return (
         <div style={{
-            minHeight: "80vh",
+            minHeight: "90vh",
+            width: "100%",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            padding: "2rem",
+            padding: "2rem 0",
+            margin: 0,
             backgroundColor: "#f8f9fa"
         }}>
         <h2 style={{

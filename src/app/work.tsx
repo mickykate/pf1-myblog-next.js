@@ -1,112 +1,94 @@
 export function Work() {
+    //ポートフォリオのデータをここに記載。title, url, color...
+    const portfolios = [
+        {
+            title: "スケジュール管理アプリ",
+            url: "",
+            color: "#3b82f6"
+        },
+        {
+            title: "スケジュール管理アプリ",
+            url: "",
+            color: "#3b82f6"
+        },
+        {
+            title: "スケジュール管理アプリ",
+            url: "",
+            color: "#3b82f6"
+        }
+    ];
+    //ループさせるために2回繰り返して、永遠に流れてくるように見せる。
+    const items = [...portfolios, ...portfolios]
+
     return (
         <div style={{
-            overflow: "hidden",
+            minHeight: "100vh",
+            width: "100%",
             backgroundColor: "#f3f4f6",
             boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
-            padding: "1rem"
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            boxSizing: "border-box",
+            margin: 0,
+            padding: "2rem 0",
         }}>
-        <h2 style={{
-            fontFamily: "var(--font-alegreya-sans-sc), cursive",
-            fontSize: "2.5rem",
-            textAlign: "center",
-            marginBottom: "2rem"
-        }}>My Portfolio</h2>
-            <p style={{
-            maxWidth: "800px",
-            margin: "0 auto",
-            marginBottom: "2rem",
-            textAlign: "center"
+            <div style={{
+                width: "100%",
+                maxWidth: "1200px",
+                margin: "0 auto",
+                padding: "2rem 0",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center"
             }}>
-            今まで取り組んできた作品達です。
+            <h2 style={{
+                fontFamily: "var(--font-alegreya-sans-sc), cursive",
+                fontSize: "2.5rem",
+                textAlign: "center",
+                marginBottom: "3rem"
+            }}>My Portfolio</h2>
+            <p style={{
+                maxWidth: "800px",
+                margin: "0 auto",
+                marginBottom: "2rem",
+                textAlign: "center"
+            }}>
+                今まで取り組んできた作品たち
             </p>
             <div style={{
                 display: "flex",
-                gap: "1rem",
+                gap: "2rem",
                 alignItems: "center",
-                animation: "marquee 20s linear infinite",
-                whiteSpace: "nowrap"
+                width: "max-content",
+                animation: "portfolio-marquee 40s linear infinite"
             }}>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#3b82f6",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Breaking News</div>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#22c55e",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Stock Update</div>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#06b6d4",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Weather Alert</div>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#fde047",
-                    color: "#000",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Sports Scores</div>
-                                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#ef4444",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Traffic Report</div>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#a21caf",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Tech Update</div>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#ec4899",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Entertainment</div>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#6366f1",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Science News</div>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#14b8a6",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Health Tips</div>
-                <div style={{
-                    padding: "0.5rem 1rem",
-                    backgroundColor: "#f97316",
-                    color: "#fff",
-                    borderRadius: "0.5rem",
-                    minWidth: "120px",
-                    textAlign: "center"
-                }}>Food & Dining</div>
+                {items.map((item, idx) => (
+                    <a
+                        key={idx}
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                            display: "inline-block",
+                            padding: "1.5rem 2.5rem",
+                            backgroundColor: item.color,
+                            color: "#fff",
+                            borderRadius: "1rem",
+                            minWidth: "200px",
+                            textAlign: "center",
+                            fontSize: "1.2rem",
+                            fontWeight: "bold",
+                            textDecoration: "none",
+                            boxShadow: "0 2px 8px rgba(0,0,0,0.08)",
+                            transition: "transform 0.2s",
+                            whiteSpace: "nowrap"
+                        }}
+                    >
+                        {item.title}
+                    </a>
+                ))}
+                </div>
             </div>
         </div>
     );

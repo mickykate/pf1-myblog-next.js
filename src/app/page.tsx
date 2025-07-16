@@ -26,7 +26,8 @@ export default function Home() {
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-          padding: "2rem",
+          padding: "2rem 0",
+          margin: 0,
           position: "relative",
           overflow: "hidden",
           boxSizing: "border-box"
@@ -70,35 +71,28 @@ export default function Home() {
         </section>
         {/*各セクションを作成する*/}
         <section id="about" style={{ 
-          minHeight: "80vh",
           width: "100%",
           scrollMarginTop: "2rem",
           boxSizing: "border-box"
         }}>
-            <About />
+          <About />
         </section>
         <section id="work" style={{ 
-          minHeight: "80vh",
           width: "100%",
-          padding: "2rem",
           scrollMarginTop: "2rem",
           boxSizing: "border-box"
         }}>
             <Work/>
         </section>
         <section id="skills" style={{ 
-          minHeight: "100vh",
           width: "100%",
-          padding: "2rem",
           scrollMarginTop: "2rem",
           boxSizing: "border-box"
         }}>
           <Skills />
         </section>
         <section id="contact" style={{ 
-          minHeight: "100vh",
           width: "100%",
-          padding: "2rem",
           scrollMarginTop: "2rem",
           boxSizing: "border-box"
         }}>
@@ -106,7 +100,7 @@ export default function Home() {
             fontFamily: "var(--font-alegreya-sans-sc), cursive",
             fontSize: "2.5rem",
             textAlign: "center",
-            marginBottom: "2rem"
+            marginBottom: "0.5rem"
           }}>Contact Me</h2>
             <Contact />
         </section>

@@ -1,13 +1,16 @@
 export function About() {
     return (
         <div style={{
-            minHeight: "80vh",
+            minHeight: "100vh",
+            width: "100%",
             display: "flex",
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            padding: "2rem",
-            backgroundColor: "#f8f9fa"
+            backgroundColor: "#f8f9fa",
+            padding: "2rem 0",
+            margin: 0,
+            boxSizing: "border-box"
         }}>
             <h2 style={{
             fontFamily: "var(--font-alegreya-sans-sc), cursive",

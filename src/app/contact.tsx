@@ -14,12 +14,15 @@ export function Contact() {
 
     return (
         <div style={{
-            maxHeight: "100vh",
+            minHeight: "80vh",
+            width: "100%",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            padding: "2rem",
-            backgroundColor: "#fff"
+            padding: "2rem 0",
+            margin: 0,
+            backgroundColor: "#fff",
+            boxSizing: "border-box"
         }}>
             <form onSubmit={handleSubmit} style={{
                 maxWidth: "600px",
