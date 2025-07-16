@@ -21,7 +21,7 @@ export default function Home() {
       }}>
         {/*トップページを１ページとして作成する。文言と締めは横並び。*/}
         <section style={{ 
-          minHeight: "100vh",
+          minHeight: "95vh",
           width: "100%",
           display: "flex",
           justifyContent: "center",
