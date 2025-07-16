@@ -19,3 +19,17 @@ main {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
   }
+  @keyframes float {
+    0% { transform: translateY(-20px); }
+    50% { transform: translateY(20px); }
+    100% { transform: translateY(-20px); }
+}
+
+.circle1 { animation: float 3s ease-in-out infinite; }
+.circle2 { animation: float 3s ease-in-out infinite 0.4s; }
+.circle3 { animation: float 3s ease-in-out infinite 1.0s; }
+.circle4 { animation: float 3s ease-in-out infinite 1.5s; }
+.circle5 { animation: float 3s ease-in-out infinite 2.0s; }
+.circle6 { animation: float 3s ease-in-out infinite 2.5s; }
+.circle7 { animation: float 3s ease-in-out infinite 3.0s; }
+.circle8 { animation: float 3s ease-in-out infinite 3.5s; }
