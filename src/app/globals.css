@@ -7,12 +7,23 @@ body {
 main {
   margin: 0;
 }
-@keyframes moveBackground {
+@keyframes moveBackgroundImage {
     0% {
       background-position: 0 0;
     }
     100% {
       background-position: 60px 60px;
+    }
+  }
+  @keyframes flowyCurves {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
     }
   }
   @keyframes portfolio-marquee {

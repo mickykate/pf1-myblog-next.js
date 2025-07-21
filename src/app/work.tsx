@@ -2,17 +2,17 @@ export function Work() {
     //ポートフォリオのデータをここに記載。title, url, color...
     const portfolios = [
         {
-            title: "スケジュール管理アプリ",
+            title: "準備中",
             url: "",
             color: "#3b82f6"
         },
         {
-            title: "スケジュール管理アプリ",
+            title: "準備中",
             url: "",
             color: "#3b82f6"
         },
         {
-            title: "スケジュール管理アプリ",
+            title: "準備中",
             url: "",
             color: "#3b82f6"
         }
@@ -24,7 +24,7 @@ export function Work() {
         <div style={{
             minHeight: "100vh",
             width: "100%",
-            backgroundColor: "#f3f4f6",
+            backgroundColor: "#F0F2F0",
             boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
             display: "flex",
             justifyContent: "center",

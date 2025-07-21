@@ -40,16 +40,10 @@ export default function Home() {
           right: 0,
           bottom: 0,
           width: "100%",
-          backgroundImage: `
-            linear-gradient(45deg, #e6f3e6 25%, transparent 25%),
-            linear-gradient(-45deg, #cce5cc 25%, transparent 25%),
-            linear-gradient(45deg, transparent 75%, #e6f3e6 75%),
-            linear-gradient(-45deg, transparent 75%, #cce5cc 75%)
-          `,
-          backgroundSize: "60px 60px",
-          backgroundRepeat: "repeat",
-          animation: "moveBackground 20s linear infinite",
-          opacity: 0.15,
+          backgroundImage: 'linear-gradient(135deg, #2980B9,#6DD5FA, #FFFFFF)',
+          backgroundSize: '400% 400%',
+          backgroundPosition: '0% 50%',
+          animation: 'flowyCurves 15s ease infinite',
           zIndex: -1
         }} />
         <h1 style={{
