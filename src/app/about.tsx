@@ -7,7 +7,7 @@ export function About() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "#e4e4d9",
+            backgroundColor: "#F0F2F0",
             padding: "2rem 0",
             margin: 0,
             boxSizing: "border-box"

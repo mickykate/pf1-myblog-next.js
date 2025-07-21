@@ -4,14 +4,14 @@ import { useState } from 'react';
 
 export function Skills() {
     const skillsData = [
-        { name: "HTML", level: 80, color: "#e34f26" },
-        { name: "CSS", level: 80, color: "#264de4" },
-        { name: "JavaScript", level: 80, color: "#f7df1e" },
-        { name: "Ruby", level: 65, color: "#61dafb" },
-        { name: "Next.js", level: 60, color: "#000000" },
-        { name: "TypeScript", level: 70, color: "#3178c6" },
-        { name: "Ruby on Rails", level: 60, color: "#339933" },
-        { name: "SQL", level: 55, color: "#f29111" }
+        { name: "HTML", level: 80, color: " #a1c4fd" },
+        { name: "CSS", level: 80, color: "#ff9a9e" },
+        { name: "JavaScript", level: 80, color: "#8fd3f4" },
+        { name: "Ruby", level: 65, color: "#a6c0fe" },
+        { name: "Next.js", level: 60, color: "#cfd9df" },
+        { name: "TypeScript", level: 70, color: "#b490ca" },
+        { name: "Ruby on Rails", level: 60, color: "#fccb90" },
+        { name: "SQL", level: 55, color: "#96e6a1" }
     ];
     
     // クリックされた円のインデックスを管理
@@ -27,7 +27,7 @@ export function Skills() {
             alignItems: "center",
             padding: "2rem 0",
             margin: 0,
-            backgroundColor: "#e4e4d9"
+            backgroundColor: "#F0F2F0"
         }}>
             <h2 style={{
                 fontFamily: "var(--font-alegreya-sans-sc), cursive",
@@ -56,7 +56,6 @@ export function Skills() {
                             display: "flex",
                             justifyContent: "center",
                             alignItems: "center",
-                            color: skill.name === "JavaScript" || skill.name === "React" ? "#000" : "#fff", // JSとReactは黒文字
                             fontSize: "1.2rem",
                             fontWeight: "bold",
                             cursor: "pointer",
