@@ -5,26 +5,31 @@ export function Headline() {
             <nav style={{ display: "flex", gap: "2rem" }}>
                 <a href="#top" style={{ 
                   textDecoration: "none",
+                  fontWeight: "bold",
                   color: "#333",
                   transition: "color 0.3s"
                 }}>top</a>
                 <a href="#about" style={{ 
                   textDecoration: "none",
+                  fontWeight: "bold",
                   color: "#333",
                   transition: "color 0.3s"
                 }}>about</a>
                 <a href="#work" style={{ 
                   textDecoration: "none",
+                  fontWeight: "bold",
                   color: "#333",
                   transition: "color 0.3s"
                 }}>work</a>
                 <a href="#skills" style={{ 
                   textDecoration: "none",
+                  fontWeight: "bold",
                   color: "#333",
                   transition: "color 0.3s"
                 }}>skills</a>
                 <a href="#contact" style={{ 
                   textDecoration: "none",
+                  fontWeight: "bold",
                   color: "#333",
                   transition: "color 0.3s"
                 }}>contact</a>
