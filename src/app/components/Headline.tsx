@@ -1,6 +1,6 @@
 export function Headline() {
     return (
-        <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1rem", position: "sticky", top: 0,backgroundColor: "#ffffff", zIndex: 1000}}>
+        <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1rem", position: "sticky", top: 0,backgroundColor: "#fff", zIndex: 1000}}>
             <div style={{ marginRight: "auto" }}>ロゴ</div>
             <nav style={{ display: "flex", gap: "2rem" }}>
                 <a href="#top" style={{ 

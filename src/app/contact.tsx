@@ -21,15 +21,31 @@ export function Contact() {
             alignItems: "center",
             padding: "2rem 0",
             margin: 0,
-            backgroundColor: "#fff",
-            boxSizing: "border-box"
+            backgroundColor: "#fffaf0",
+            boxSizing: "border-box",
+            position: "relative"
         }}>
+        <div style={{
+            position: "absolute",
+            top: "2rem",
+            left: "50%",
+            transform: "translateX(-50%)",
+            fontFamily: "var(--font-alegreya-sans-sc), cursive",
+            fontSize: "2.5rem",
+            fontWeight: "bold",
+            textAlign: "center",
+            marginBottom: "0.5rem",
+            zIndex: 2
+        }}>Contact Me
+        </div>
             <form onSubmit={handleSubmit} style={{
                 maxWidth: "600px",
                 width: "100%",
                 padding: "2rem",
                 borderRadius: "8px",
-                boxShadow: "0 4px 12px rgba(0,0,0,0.1)"
+                boxShadow: "0 4px 12px rgba(0,0,0,0.1)",
+                backgroundColor: "#fff",
+                marginTop: "4rem"
             }}> 
                 <div style={{ marginBottom: "1.5rem" }}>
                     <label style={{ display: "block", marginBottom: "0.5rem" }}>name</label>
@@ -69,9 +85,10 @@ export function Contact() {
                     padding: "1rem",
                     borderRadius: "4px",
                     border: "none",
-                    backgroundColor: "#008000",
-                    color: "#fff",
+                    backgroundColor: "#ffdead",
+                    color: "#000",
                     cursor: "pointer",
+                    fontWeight: "bold",
                     fontSize: "1rem"
                 }}>送信</button>
             </form>

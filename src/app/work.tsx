@@ -24,7 +24,7 @@ export function Work() {
         <div style={{
             minHeight: "100vh",
             width: "100%",
-            backgroundColor: "#fff",
+            backgroundColor: "#fffaf0",
             boxShadow: "0 1px 3px rgba(0,0,0,0.1)",
             display: "flex",
             justifyContent: "center",

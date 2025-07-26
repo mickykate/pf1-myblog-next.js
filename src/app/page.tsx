@@ -90,12 +90,6 @@ export default function Home() {
           scrollMarginTop: "2rem",
           boxSizing: "border-box"
         }}>
-          <h2 style={{
-            fontFamily: "var(--font-alegreya-sans-sc), cursive",
-            fontSize: "2.5rem",
-            textAlign: "center",
-            marginBottom: "0.5rem"
-          }}>Contact Me</h2>
             <Contact />
         </section>
       </main>

@@ -7,7 +7,7 @@ export function About() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "#F0F2F0",
+            backgroundColor: "#fffef2",
             padding: "2rem 0",
             margin: 0,
             boxSizing: "border-box"
@@ -61,7 +61,7 @@ export function About() {
                             borderRadius: "8px",
                             boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
                         }}>
-                            <strong>名前:</strong> MIYUKI KATO
+                            <strong>好きなこと：</strong> 猫と遊ぶ、景色の写真を撮ること
                         </li>
                         <li style={{
                             marginBottom: "1rem",
@@ -70,7 +70,7 @@ export function About() {
                             borderRadius: "8px",
                             boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
                         }}>
-                            <strong>職業:</strong> Web Developer
+                            <strong>趣味：</strong> 映画鑑賞、読書、音楽を聴くこと
                         </li>
                         <li style={{
                             marginBottom: "1rem",
@@ -79,7 +79,7 @@ export function About() {
                             borderRadius: "8px",
                             boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
                         }}>
-                            <strong>趣味:</strong> プログラミング、読書、旅行
+                            <strong>エンジニアを目指すキッカケ：</strong> より社内の業務を効率化させて作業しやすい環境を作りたいと思ったため
                         </li>
                         <li style={{
                             marginBottom: "1rem",
@@ -88,7 +88,7 @@ export function About() {
                             borderRadius: "8px",
                             boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
                         }}>
-                            <strong>目標:</strong> ユーザーに価値を提供するWebアプリケーションの開発
+                            <strong>目標：</strong> ユーザーに価値を提供するWebアプリケーションを開発する
                         </li>
                     </ul>
                 </div>

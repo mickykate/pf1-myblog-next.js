@@ -27,7 +27,7 @@ export function Skills() {
             alignItems: "center",
             padding: "2rem 0",
             margin: 0,
-            backgroundColor: "#F0F2F0"
+            backgroundColor: "#fffef2"
         }}>
             <h2 style={{
                 fontFamily: "var(--font-alegreya-sans-sc), cursive",
