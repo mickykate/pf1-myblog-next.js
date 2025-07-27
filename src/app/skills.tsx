@@ -23,7 +23,7 @@ export function Skills() {
             width: "100%",
             display: "flex",
             flexDirection: "column",
-            justifyContent: "flex-start",
+            justifyContent: "center",
             alignItems: "center",
             padding: "2rem 0",
             margin: 0,
@@ -33,6 +33,7 @@ export function Skills() {
                 fontFamily: "var(--font-alegreya-sans-sc), cursive",
                 fontSize: "2.5rem",
                 marginBottom: "2rem",
+                position: "absolute",
                 marginTop: "2rem"
             }}>My Skills</h2>
             <div style={{

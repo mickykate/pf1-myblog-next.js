@@ -61,7 +61,8 @@ export function About() {
                             borderRadius: "8px",
                             boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
                         }}>
-                            <strong>好きなこと：</strong> 猫と遊ぶ、景色の写真を撮ること
+                            <strong>好きなこと🐈‍⬛</strong>
+                            <br/>猫と遊ぶ、景色や食べ物の写真を撮ること
                         </li>
                         <li style={{
                             marginBottom: "1rem",
@@ -70,7 +71,8 @@ export function About() {
                             borderRadius: "8px",
                             boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
                         }}>
-                            <strong>趣味：</strong> 映画鑑賞、読書、音楽を聴くこと
+                            <strong>趣味🎧</strong>
+                            <br/>映画鑑賞、読書（今はマスカレードシリーズを読んでいます）、音楽を聴くこと
                         </li>
                         <li style={{
                             marginBottom: "1rem",
@@ -79,7 +81,8 @@ export function About() {
                             borderRadius: "8px",
                             boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
                         }}>
-                            <strong>エンジニアを目指すキッカケ：</strong> より社内の業務を効率化させて作業しやすい環境を作りたいと思ったため
+                            <strong>エンジニアを目指すキッカケ👩‍💻</strong>
+                            <br/>より社内の業務を効率化させて作業しやすい環境を作りたいと思ったため
                         </li>
                         <li style={{
                             marginBottom: "1rem",
@@ -88,7 +91,8 @@ export function About() {
                             borderRadius: "8px",
                             boxShadow: "0 2px 4px rgba(0,0,0,0.05)"
                         }}>
-                            <strong>目標：</strong> ユーザーに価値を提供するWebアプリケーションを開発する
+                            <strong>目標🏃‍♀️</strong>
+                            <br/>ユーザーに価値を提供するWebアプリケーションを開発する
                         </li>
                     </ul>
                 </div>
