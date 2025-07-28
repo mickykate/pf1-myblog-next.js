@@ -32,10 +32,17 @@ export function Skills() {
             <h2 style={{
                 fontFamily: "var(--font-alegreya-sans-sc), cursive",
                 fontSize: "2.5rem",
-                marginBottom: "2rem",
-                position: "absolute",
-                marginTop: "2rem"
+                textAlign: "center",
+                marginBottom: "3rem"
             }}>My Skills</h2>
+            <p style={{
+                maxWidth: "800px",
+                margin: "0 auto",
+                marginBottom: "2rem",
+                textAlign: "center"
+            }}>
+                触れたことのある言語たち。<br/>クリックすると、その言語の理解度が表示されます。
+            </p>
             <div style={{
                 display: "flex",
                 gap: "2rem",
