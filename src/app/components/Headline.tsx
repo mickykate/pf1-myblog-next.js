@@ -1,8 +1,10 @@
+import Link from 'next/link';
+
 export function Headline() {
     return (
         <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", padding: "1rem", position: "sticky", top: 0, backgroundColor: "#FFFEF7", color: "#000000", zIndex: 1000}}>
             <div style={{ marginRight: "auto" }}>
-              <a href="/">
+              <Link href="/">
               <img src="/mylogo.jpeg" alt="My Logo"
               style={{
                 width: "35px",
@@ -10,7 +12,7 @@ export function Headline() {
                 borderRadius: "50%",
                 objectFit: "cover"
               }}  />
-              </a>
+              </Link>
             </div>
             <nav style={{ display: "flex", gap: "2rem" }}>
                 <a href="#top" style={{ 

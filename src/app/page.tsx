@@ -61,7 +61,7 @@ export default function Home() {
           color: "#666",
           position: "relative",
           zIndex: 1
-        }}>I'm a web developer...</p>
+        }}>I&apos;m a web developer...</p>
         </section>
         {/*各セクションを作成する*/}
         <section id="about" style={{ 

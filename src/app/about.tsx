@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export function About() {
     return (
         <div style={{
@@ -30,7 +32,7 @@ export function About() {
                     flex: "0 0 300px",
                     textAlign: "center"
                 }}>
-                    <img 
+                    <Image
                         src="/063BFCFA-F32C-4665-A9DF-306A94115D03_1_105_c.jpeg" 
                         alt="Profile Photo"
                         style={{
