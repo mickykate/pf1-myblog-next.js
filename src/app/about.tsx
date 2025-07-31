@@ -35,6 +35,8 @@ export function About() {
                     <Image
                         src="/063BFCFA-F32C-4665-A9DF-306A94115D03_1_105_c.jpeg" 
                         alt="Profile Photo"
+                        width={300}
+                        height={300}
                         style={{
                             width: "300px",
                             height: "300px",
