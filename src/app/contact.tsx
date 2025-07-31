@@ -61,19 +61,19 @@ export function Contact() {
             boxSizing: "border-box",
             position: "relative"
         }}>
-            <div style={{
-                position: "absolute",
-                top: "2rem",
-                left: "50%",
-                transform: "translateX(-50%)",
-                fontFamily: "var(--font-alegreya-sans-sc), cursive",
-                fontSize: "2.5rem",
-                fontWeight: "bold",
-                textAlign: "center",
-                marginBottom: "0.5rem",
-                zIndex: 2
-            }}>Contact Me</div>
-            
+        <div style={{
+            position: "absolute",
+            top: "2rem",
+            left: "50%",
+            transform: "translateX(-50%)",
+            fontFamily: "var(--font-alegreya-sans-sc), cursive",
+            fontSize: "2.5rem",
+            fontWeight: "bold",
+            textAlign: "center",
+            marginBottom: "0.5rem",
+            zIndex: 2
+        }}>Contact Me
+        </div>
             <form onSubmit={handleSubmit} style={{
                 maxWidth: "600px",
                 width: "100%",
