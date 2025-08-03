@@ -30,12 +30,12 @@ export function Contact() {
                 throw error;
             }
 
-            // 成功時の処理
+             // 成功時の処理
             console.log('お問い合わせが送信されました:', data);
             setSubmitStatus('success');
             alert('お問い合わせありがとうございます！');
 
-            // フォームをリセット
+             // フォームをリセット
             setName('');
             setEmail('');
             setMessage('');
@@ -61,6 +61,33 @@ export function Contact() {
             boxSizing: "border-box",
             position: "relative"
         }}>
+            {/* 成功・エラーメッセージ - ここを追加 */}
+            {submitStatus === 'success' && (
+            <div style={{
+                padding: "1rem",
+                marginBottom: "1rem",
+                backgroundColor: "#d4edda",
+                color: "#155724",
+                border: "1px solid #c3e6cb",
+                borderRadius: "4px"
+            }}>
+                お問い合わせありがとうございます！内容を確認後、ご連絡いたします。
+            </div>
+        )}
+
+            {submitStatus === 'error' && (
+            <div style={{
+                padding: "1rem",
+                marginBottom: "1rem",
+                backgroundColor: "#f8d7da",
+                color: "#721c24",
+                border: "1px solid #f5c6cb",
+                borderRadius: "4px"
+            }}>
+                送信中にエラーが発生しました。もう一度お試しください。
+            </div>
+        )}
+
         <div style={{
             position: "absolute",
             top: "2rem",
